@@ -1,0 +1,23 @@
+<!doctype html>
+
+<% post.comments.forEach(function(comment , index){ %>
+	<span><a href = "/u/<%= comment.name %>" class="author"><%= comment.name %>:</a><span>
+			<%= comment.content %><br>
+<% }) %>
+
+<% if(user){ %>
+	<form method="post">
+		<div style="display:none;">
+			姓名:<input type="text" name="name" value="<%= user.name %>"/>
+			邮箱:<input type="text" name="email" value="<%= user.email %>"/>
+			邮箱:<input type="text" name="website" value="/u/<%= user.name %>"/>		
+		</div>
+		你的评论:<br>
+		<textarea cols="80" rows="6" name="content"></textarea>
+		<input type="submit" style="cursor:pointer"/>
+	</form>
+<% }else{ %>
+	<p>未登录，不能评论</p>
+<% } %>
+	
+	

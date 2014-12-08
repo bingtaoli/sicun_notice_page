@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<% include bar %>	
+	<% posts.forEach(function(post , index){ %>		
+		<h2><a href="/u/<%= post.name%>/<%= post.title %>/<%= post.time.minute %>"><%=post.title %></a></h2>
+		<p class="info">			
+			日期:<%= post.time.minute %> ||
+			类别:<%= post.tag %>
+		</p>
+		<p><%=post.article %></p>
+		<br>
+		<br>
+		
+	<% }) %>
+
+<% include footer %>

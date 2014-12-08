@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<% include bar %>
+	<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+	<form method="post">
+		标题:<br>
+		<input type="text" name="title"><br> 
+		<br>
+		<select name="tag">
+			<option>UI</option>
+			<option>FE</option>
+			<option>RD</option>
+		</select>
+		<br>
+		<br>
+		正文:<br>
+		<textarea class="ckeditor" rows="20" cols="100" name="article"></textarea>
+		<br>
+		<input type="submit" style="cursor:pointer">
+	</form>
+<% include footer %>
+

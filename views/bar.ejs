@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/NS.css">
+	<title>sicun notice</title>
+</head>
+<div class="siderbar">
+	<img src="/images/logoSiderbar.png" alt="logo" />
+	<% if(user) { %>
+	<nav>
+		<p><a href="/">home</a></p>
+		<p><a href="/post">post</a></p>
+		<p><a href="/logout">logout</a></p>
+	</nav>
+	<% }else{ %>
+	<nav>
+		<p><a href="/">home</a></p>
+		<p><a href="/login">login</a></p>
+		<p><a href="/regist">regist</a></p>
+	</nav>
+	<% } %>
+</div>
+
+<h1><%= title %></h1>
+<hr>
+
+<article>
+	<% if(success){ %>
+		<%= success %>
+	<%}if(error){%>
+		<%= error %>
+	<% } %>
+		

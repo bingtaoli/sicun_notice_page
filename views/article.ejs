@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<% include bar %>
+	<div class="showone">
+		<p class="info">
+			作者:<a href="/u/<%= post.name%>" class="author"><%= post.name %></a> ||
+			日期:<%= post.time.minute %> ||
+			类别:<a class="tag" href = "/tag/<%= post.tag %>"><%= post.tag %></a>
+		</p>
+		<p><%=post.article %></p>
+	</div>	
+		<br>
+		<br>
+
+<% include comment %>
+
+<% include footer %>
+

@@ -1,0 +1,89 @@
+body{	
+	width: 600px;
+	margin: 0;
+	margin-left: 300px;
+  	font-size: 14px;
+  	font-family: "Microsoft YaHei";
+  	padding: 0;
+}
+p{
+	line-height: 24px;
+	margin: 1em 0;
+}
+a{
+	text-decoration: none;
+	color:  -webkit-link;
+}
+img{
+	padding-top: 20px;
+}
+div.siderbar{	
+	text-align: center;
+	position: fixed;
+	width :250px;
+	height :900px; 
+	background-color:#666666;	
+	left: 0; 
+	top: 0;
+}
+nav{
+	margin-left: 55px;
+	text-transform: uppercase;
+}
+nav a{
+	background-color: rgb(113,184,255);
+	display: block;
+	padding-top: 10px;
+	width: 120px;
+	height: 28px;
+	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	text-align: center
+
+}
+nav a:hover{
+	color: rgb(255,255,0);
+}
+.info{
+	font-size: 14px;
+}
+
+form{
+	margin-top: 1em;
+}
+form span{
+	display: inline-block;
+	width: 5em;
+	text-align: left;
+	margin-right: 1em;
+} 
+input.submit{
+	margin-top: 1em;
+	margin-left: 215px;
+	cursor: pointer;
+}
+div.showone{
+	border-bottom: 2px solid #ddd;
+}
+a.tag{
+	margin-left: 10px;
+	background-color: rgb(113,184,255);
+	border-radius: 3px;
+	font-size: 14px;
+	color: #fff;
+	display: inline-block;
+	padding: 0 5px;
+	height: 22px;
+}
+a.tag:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	-webkit-transition: color .2s linear;
+}
+a.author{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
